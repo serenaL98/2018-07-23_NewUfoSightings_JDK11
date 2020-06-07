@@ -11,13 +11,13 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-//controller turno A --> switchare al branch master_turnoB per turno B
+//controller turno B --> switchare al branch master_turnoA per turno A
 
 public class FXMLController {
 	
 	private Model model;
 
-    @FXML
+	@FXML
     private ResourceBundle resources;
 
     @FXML
@@ -30,10 +30,7 @@ public class FXMLController {
     private TextField txtAnno;
 
     @FXML
-    private Button btnSelezionaAnno;
-
-    @FXML
-    private ComboBox<?> cmbBoxForma;
+    private TextField txtxG;
 
     @FXML
     private Button btnCreaGrafo;
@@ -42,18 +39,13 @@ public class FXMLController {
     private TextField txtT1;
 
     @FXML
-    private TextField txtAlfa;
+    private TextField txtT2;
 
     @FXML
     private Button btnSimula;
 
     @FXML
     void doCreaGrafo(ActionEvent event) {
-
-    }
-
-    @FXML
-    void doSelezionaAnno(ActionEvent event) {
 
     }
 
@@ -66,11 +58,10 @@ public class FXMLController {
     void initialize() {
         assert txtResult != null : "fx:id=\"txtResult\" was not injected: check your FXML file 'NewUfoSightings.fxml'.";
         assert txtAnno != null : "fx:id=\"txtAnno\" was not injected: check your FXML file 'NewUfoSightings.fxml'.";
-        assert btnSelezionaAnno != null : "fx:id=\"btnSelezionaAnno\" was not injected: check your FXML file 'NewUfoSightings.fxml'.";
-        assert cmbBoxForma != null : "fx:id=\"cmbBoxForma\" was not injected: check your FXML file 'NewUfoSightings.fxml'.";
+        assert txtxG != null : "fx:id=\"txtxG\" was not injected: check your FXML file 'NewUfoSightings.fxml'.";
         assert btnCreaGrafo != null : "fx:id=\"btnCreaGrafo\" was not injected: check your FXML file 'NewUfoSightings.fxml'.";
         assert txtT1 != null : "fx:id=\"txtT1\" was not injected: check your FXML file 'NewUfoSightings.fxml'.";
-        assert txtAlfa != null : "fx:id=\"txtAlfa\" was not injected: check your FXML file 'NewUfoSightings.fxml'.";
+        assert txtT2 != null : "fx:id=\"txtT2\" was not injected: check your FXML file 'NewUfoSightings.fxml'.";
         assert btnSimula != null : "fx:id=\"btnSimula\" was not injected: check your FXML file 'NewUfoSightings.fxml'.";
 
     }
